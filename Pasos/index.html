@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="./imagenes/Logo.png">
+  <title>Crud Pasos Peatones</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <script src="datos.js"></script>
+  <script src="./js/funciones.js"></script>
+</head>
+
+<body>
+  <div id="contenedor">
+    <header id="cabecera">
+
+      
+        <picture style="margin: 5px;">
+          <source media="(min-width: 500px)" srcset="imagenes/LogoPlantilla.png">
+          <img id="imagenTitulo" src="imagenes/Logop.png" alt="Logo CIFP">
+        </picture>
+        <h1 id="titulo">Crud Array Pasos de Peatones </h1>
+
+      
+    </header>
+    <nav id="menu">
+      <input type="checkbox" id="menuopciones">
+      <label for="menuopciones"> ☰ </label>    
+      <ul>
+        <li id="bNuevo">Nuevo</li>
+        <li id="bGrabar">Grabar</li>
+        <li id="bModificar">Modificar</li>
+        <li id="bBorrar">Borrar</li>
+        <li id="bSiguiente">Siguiente</li>
+        <li id="bAnterior">Anterior</li>
+        <li id="bTabla">Tabla</li>
+      </ul>
+
+    </nav>
+    <section id="seccion">
+      <article>
+        <header>
+          <hgroup>
+            <h1>Registro pasos de peatones</h1>
+             
+          </hgroup>
+          
+        </header>
+       
+        <figure>
+          <img src="./imagenes/Logo.png" >
+        </figure>
+        <body>
+          <table  style="width: 100%">
+            <tr>
+              <td style="width: 146px">IdRegistro</td>
+              <td>
+      
+                <input id="IdRegistro" type="text" style="width: 257px" value="" />
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 146px; height: 26px;">Direccion</td>
+      
+              <td style="height: 26px">
+      
+                <input id="direccion" type="text" style="width: 377px" />
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 146px">Latitud&nbsp;</td>
+              <td>
+      
+                <input id="latitud" type="text" style="width: 241px; height: 19px;" />
+              </td>
+            </tr>
+      
+            <tr>
+              <td style="width: 146px">Longitud</td>
+              <td>
+      
+                <input id="longitud" type="text" style="width: 155px" />
+              </td>
+            </tr>
+      
+              <td style="width: 146px">&nbsp;</td>
+              <td>
+      
+                &nbsp;</td>
+            </tr>
+          </table>
+      
+      
+        </body>
+        <footer>
+          <p>comentarios (0)</p>
+        </footer>
+      </article>
+      <article>
+        <header>
+          <hgroup>
+            <h1>Tabla Pasos de peatones</h1>
+        
+        </header>
+        <table border="1" id="tabla" class="tablaLibros">
+          <tbody id="cuerpo">
+            <tr>
+              <td style="height: 25px">IdRegistro</td>
+              <td style="height: 25px">DIRECCION</td>
+              <td style="height: 25px">LATITUD</td>
+              <td style="width: 482px; height: 25px;">LONGITUD</td>
+            </tr>
+          </tbody>
+          </table>
+      
+      </article>
+    </section>
+    <aside id="columna">
+      <blockquote>Crud</blockquote>
+      <blockquote>De xml a Array()</blockquote>
+      <blockquote>Ciudad inteligente</blockquote>
+      <blockquote>Pasos de peatones</blockquote>
+    </aside>
+    <footer id="pie">
+      Javier Sacristan Zayas
+    </footer>
+  </div>
+</body>
+
+</html>
